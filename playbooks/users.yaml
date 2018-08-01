@@ -1,0 +1,14 @@
+--- 
+
+- name: Criando usuarios do SO 
+  hosts: all 
+  tasks: 
+   - name: criando os usuarios no servidor 
+     user: 
+      name: "{{ item }}" 
+      shell: /bin/bash
+     with_items: 
+      - vaca
+      - boi 
+      - jorge
+      - judith   

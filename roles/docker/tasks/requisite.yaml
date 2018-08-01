@@ -1,0 +1,10 @@
+
+- name: instalando os requisitos do docker
+  package:
+   name: "{{ item }}"
+   update_cache: yes 
+  with_items:
+   - apt-transport-https
+   - ca-certificates
+   - curl 
+   - software-properties-common  

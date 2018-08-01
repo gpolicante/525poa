@@ -1,0 +1,5 @@
+---
+- name: instalando o docker devops 
+  hosts: docker 
+  roles:
+   - docker 

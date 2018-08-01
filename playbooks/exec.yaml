@@ -1,0 +1,6 @@
+---
+- name: exercicio devops 
+  hosts: all 
+  roles: 
+   - apache
+   - pacotes

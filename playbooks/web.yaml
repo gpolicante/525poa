@@ -1,0 +1,6 @@
+--- 
+
+- name: chamando a role web 
+  hosts: all 
+  roles: 
+   - web 

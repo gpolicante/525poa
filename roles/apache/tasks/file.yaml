@@ -1,0 +1,6 @@
+- name: copiando a index
+  template: 
+   src: ../files/index.html
+   dest: /var/www/html/index.html 
+
+

@@ -1,0 +1,13 @@
+
+- name: Instalando repositorio em distro ubuntu Xenial
+  apt:
+   deb: https://apt.puppetlabs.com/puppet5-release-xenial.deb
+  when: ansible_distribution_release == "xenial"
+
+- name: Instalando repositorio em distro centos7  
+  when: ansible_distribution_major_version == "7" 
+  yum: 
+   name: https://yum.puppet.com/puppet5/puppet5-release-el-7.noarch.rpm
+
+
+

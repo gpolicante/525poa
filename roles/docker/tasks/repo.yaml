@@ -1,0 +1,10 @@
+
+- name: adicionando a chave do repositorio do docker
+  apt_key: 
+   url: https://download.docker.com/linux/ubuntu/gpg 
+   state: present
+
+- name: adicionando o repositorio do docker 
+  apt_repository: 
+   repo: deb [arch=amd64] https://download.docker.com/linux/ubuntu  {{ ansible_distribution_release }} stable 
+   state: present 

@@ -1,0 +1,6 @@
+
+- name: INstalando agent em todas as maquinas 
+  package: 
+   name: puppet-agent 
+   state: present 
+   update_cache: yes 

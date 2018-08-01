@@ -1,0 +1,12 @@
+--- 
+
+- name: exemplo de return code 
+  hosts: all 
+  tasks: 
+   - name: testando arquivo no profile 
+     command: test -f /etc/profile.d/dexter 
+     register: result 
+
+   - name: configurando uma variavel 
+     shell: echo "export DEXTER=/opt/dexter > /etc/profile.d/dexter" 
+     when: result.rc == 0 

@@ -1,0 +1,6 @@
+
+- name: enviando uma index.html para os servidores 
+  template: 
+   src: ../files/index.html 
+   dest: /var/www/html/index.html
+  when: ansible_os_family == "Debian" 

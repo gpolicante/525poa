@@ -1,0 +1,9 @@
+
+
+- name: Instalando o puppetserver na devops 
+  apt:
+   name: puppetserver 
+   update_cache: yes 
+   state: present 
+  when: ansible_hostname == "devops" 
+

@@ -1,0 +1,14 @@
+
+- name: instalando apache no debian 
+  apt: 
+   name: apache2 
+   state: present 
+   update_cache: yes 
+  when: ansible_os_family == "Debian" 
+  
+
+- name: instalando apache no centos 
+  yum:  
+   name: httpd
+   state: present 
+  when: ansible_os_family == "RedHat"

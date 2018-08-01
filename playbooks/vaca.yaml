@@ -1,0 +1,12 @@
+---
+
+- name: instalando a vaca 
+  hosts: docker devops 
+  vars:
+   - pacote: pacote 
+
+  tasks:
+   - name: instalando o cowsay 
+     apt: 
+      name: "{{ pacote }}" 
+      state: present 

@@ -1,0 +1,11 @@
+---
+# tasks file for docker
+
+- name: adicionando repositorio do docker
+  include: repo.yaml
+
+- name: adicionando o pre req do docker
+  include: requisite.yaml 
+
+- name: instalando o dockerce 
+  include: install.yaml 

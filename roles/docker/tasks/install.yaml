@@ -1,0 +1,5 @@
+
+- name: instalando o docker 
+  package:
+   name: docker-ce 
+   update_cache: yes 

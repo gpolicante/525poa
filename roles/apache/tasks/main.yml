@@ -1,0 +1,10 @@
+---
+# tasks file for apache
+
+- name: instalando o apache 
+  include: instalar.yaml 
+
+- name: enviando o template do index
+  include: file.yaml 
+
+
